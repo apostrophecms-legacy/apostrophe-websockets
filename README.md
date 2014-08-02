@@ -6,12 +6,16 @@ Apostrophe Websockets
 ```javascript
   ...
   modules: {
-    'apostrophe-websockets': { }
+    'apostrophe-websockets': {
+      adminOnly: false
+    }
   }
   ...
 ```
 
-This will establish add socket.io to your server and load `socket.io.js` on the frontend. To take advantage of socket connections you'll need to subclass the websockets module on the server.
+Currently the only option you can pass is `adminOnly`, which when `true` establishes a browser-side socket client only to logged in users. It is `false` by default.
+
+This will add socket.io to your server and load `socket.io.js` on the frontend. To take advantage of socket connections you'll need to subclass the websockets module on the server.
 
 Subclassing on the Server
 ===
@@ -45,7 +49,7 @@ websockets.Construct = function(options, callback) {
 };
 ```
 
-If you plan to subclass the websockets module more than once, use the `superFunction` pattern to add more code to the existing initializeSockets function:
+If you plan to subclass the websockets module more than once, use the `superFunction` pattern to add more code to the existing `initializeSockets` function:
 
 ```javascript
 var superInitializeSockets = self.initializeSockets;
