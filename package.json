@@ -1,0 +1,19 @@
+{
+  "name": "apostrophe-websockets",
+  "version": "0.5.0",
+  "description": "Enables socket.io in Apostrophe projects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/punkave/apostrophe-websockets"
+  },
+  "author": "P'unk Avenue",
+  "license": "BSD",
+  "dependencies": {
+    "socket.io": "1.0.6",
+    "lodash": "2.4.1"
+  }
+}
