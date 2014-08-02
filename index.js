@@ -3,7 +3,7 @@ var _ = require('lodash');
 module.exports = websockets;
 
  function websockets(options, callback) {
-  return new Construct(options, callback);
+  return new websockets.Construct(options, callback);
 }
 
 websockets.Construct = function(options, callback) {
@@ -48,4 +48,4 @@ websockets.Construct = function(options, callback) {
       return callback(null);
     });
   }
-}
+};

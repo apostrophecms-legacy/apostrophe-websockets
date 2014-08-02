@@ -15,5 +15,15 @@
   "dependencies": {
     "socket.io": "1.0.6",
     "lodash": "2.4.1"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/punkave/apostrophe-websockets/issues"
+  },
+  "homepage": "https://github.com/punkave/apostrophe-websockets",
+  "keywords": [
+    "socketio",
+    "apostrophe",
+    "websockets",
+    "realtime"
+  ]
 }
