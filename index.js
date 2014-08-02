@@ -18,7 +18,7 @@ websockets.Construct = function(options, callback) {
 
   options.modules = (options.modules || []).concat([ { dir: __dirname, name: 'websockets' } ]);
 
-  self.apos.mixinModuleAssets(self, 'websockets', __dirname, options);
+  self._apos.mixinModuleAssets(self, 'websockets', __dirname, options);
   self.pushAsset('script', 'loadSockets', { when: self._adminOnly ? 'user' : 'always' });
 
 
