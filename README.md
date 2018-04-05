@@ -1,6 +1,12 @@
 Apostrophe Websockets
 =====================
 
+## Currently for OLD versions of Apostrophe
+
+This module was for Apostrophe 0.5.x. Currently there is no port for Apostrophe 2.x. Contributions welcome.
+
+## How to use
+
 `apostrophe-websockets` adds `socket.io` to your [Apostrophe](https://github.com/punkave/apostrophe) project. To use it, add it to your `package.json` file and then add the following to your Apostrophe `app.js` module configuration:
 
 ```javascript
